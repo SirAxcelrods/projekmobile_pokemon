@@ -6,9 +6,9 @@ class FavoritePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Favorite Page'),
-        backgroundColor: Colors.blue, // Ubah warna latar belakang navbar menjadi biru
+        backgroundColor: Colors.red,
       ),
-      backgroundColor: Colors.blue, // Ubah warna latar belakang halaman menjadi biru
+      backgroundColor: Colors.red,
       body: Center(
         child: Text(
           'Favorite Page Content',

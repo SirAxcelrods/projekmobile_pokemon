@@ -36,13 +36,13 @@ class _MainPageState extends State<MainPage> {
         title: Text(
           'POKÉMON',
           style: TextStyle(
-            fontWeight: FontWeight.bold, // Making text bold
+            fontWeight: FontWeight.bold,
           ),
         ),
         centerTitle: true, // Centering the text
-        backgroundColor: Colors.blue, // Ubah warna latar belakang navbar menjadi biru
+        backgroundColor: Colors.red,
       ),
-      backgroundColor: Colors.blue, // Ubah warna latar belakang halaman menjadi biru
+      backgroundColor: Colors.red,
       body: FutureBuilder<List<dynamic>>(
         future: _sets,
         builder: (context, snapshot) {

@@ -35,7 +35,7 @@ class MainCardContainer extends StatelessWidget {
 
     return Card(
       elevation: 4,
-      color: Colors.lightBlueAccent, // Ubah warna latar belakang sesuai keinginan
+      color: Colors.red[200],
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

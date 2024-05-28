@@ -77,29 +77,29 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/light-1.png'),
+                              image: AssetImage('assets/images/poke2.png'),
                             ),
                           ),
                         ),
                       ),
                     ),
                     Positioned(
-                      left: 140,
-                      width: 80,
-                      height: 150,
+                      left: 40,
+                      width: 300,
+                      height: 300,
                       child: FadeInUp(
                         duration: Duration(milliseconds: 1200),
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/light-2.png'),
+                              image: AssetImage('assets/images/poke.png'),
                             ),
                           ),
                         ),
                       ),
                     ),
                     Positioned(
-                      right: 40,
+                      right: 60,
                       top: 40,
                       width: 80,
                       height: 150,
@@ -108,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/clock.png'),
+                              image: AssetImage('assets/images/ball.png'),
                             ),
                           ),
                         ),
@@ -118,12 +118,12 @@ class _RegisterPageState extends State<RegisterPage> {
                       child: FadeInUp(
                         duration: Duration(milliseconds: 1600),
                         child: Container(
-                          margin: EdgeInsets.only(top: 50),
+                          margin: EdgeInsets.only(top: 200),
                           child: Center(
                             child: Text(
                               "Register",
                               style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.red,
                                   fontSize: 40,
                                   fontWeight: FontWeight.bold),
                             ),
@@ -145,7 +145,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Color.fromRGBO(143, 148, 251, 1)),
+                          border: Border.all(color: Color.fromRGBO(200, 12, 12, 1)),
                           boxShadow: [
                             BoxShadow(
                               color: Color.fromRGBO(143, 148, 251, .2),
@@ -161,7 +161,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               decoration: BoxDecoration(
                                 border: Border(
                                     bottom: BorderSide(
-                                        color: Color.fromRGBO(143, 148, 251, 1))),
+                                        color: Color.fromRGBO(225, 29, 50, 1))),
                               ),
                               child: TextField(
                                 controller: _emailController,
@@ -177,7 +177,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               decoration: BoxDecoration(
                                 border: Border(
                                     bottom: BorderSide(
-                                        color: Color.fromRGBO(143, 148, 251, 1))),
+                                        color: Color.fromRGBO(225, 24, 23, 1))),
                               ),
                               child: TextField(
                                 controller: _passwordController,
@@ -189,7 +189,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                 ),
                               ),
                             ),
-                            Divider(color: Color.fromRGBO(143, 148, 251, 1)),
+                            Divider(color: Color.fromRGBO(225, 0, 0, 1)),
                             Container(
                               padding: EdgeInsets.all(8.0),
                               child: Row(
@@ -218,8 +218,8 @@ class _RegisterPageState extends State<RegisterPage> {
                             borderRadius: BorderRadius.circular(10),
                             gradient: LinearGradient(
                               colors: [
-                                Color.fromRGBO(143, 148, 251, 1),
-                                Color.fromRGBO(143, 148, 251, .6),
+                                Color.fromRGBO(225, 0, 60, 1),
+                                Color.fromRGBO(225, 0, 0, .6),
                               ],
                             ),
                           ),
@@ -245,7 +245,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         child: Text(
                           "Already have an account? Login here",
                           style: TextStyle(
-                              color: Color.fromRGBO(143, 148, 251, 1)),
+                              color: Color.fromRGBO(225, 45, 32, 1)),
                         ),
                       ),
                     ),

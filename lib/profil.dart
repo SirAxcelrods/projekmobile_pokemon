@@ -69,7 +69,7 @@ class _ProfilPageState extends State<ProfilPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Profile'),
-        backgroundColor: Colors.blue, // Ubah warna latar belakang navbar menjadi biru
+        backgroundColor: Colors.red,
         actions: <Widget>[
           IconButton(
             icon: Icon(_isEditing ? Icons.save : Icons.edit),
@@ -83,9 +83,9 @@ class _ProfilPageState extends State<ProfilPage> {
           ),
         ],
       ),
-      backgroundColor: Colors.blue, // Ubah warna latar belakang halaman menjadi biru
+      backgroundColor: Colors.red,
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
@@ -111,7 +111,7 @@ class _ProfilPageState extends State<ProfilPage> {
               controller: _passwordController,
               enabled: _isEditing,
               decoration: InputDecoration(labelText: 'Password'),
-              obscureText: false, // Mengubah menjadi false untuk menampilkan password tanpa sensor
+              obscureText: false,
               onChanged: (value) {
                 if (!_isEditing) return;
                 _updateLastLoginAutofill();

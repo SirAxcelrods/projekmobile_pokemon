@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Welcome Back!'),
-        backgroundColor: Colors.blue, // Ubah warna latar belakang navbar menjadi biru
+        backgroundColor: Colors.red,
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.red,
         onTap: _onItemTapped,
       ),
     );

@@ -52,9 +52,9 @@ class _DetailSetsPageState extends State<DetailSetsPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Details Pokémon'),
-        backgroundColor: Colors.blue, // Ubah warna latar belakang navbar menjadi biru
+        backgroundColor: Colors.red,
       ),
-      backgroundColor: Colors.blue, // Ubah warna latar belakang halaman menjadi biru
+      backgroundColor: Colors.red,
       body: FutureBuilder<Map<String, dynamic>>(
         future: _setDetails,
         builder: (context, snapshot) {
@@ -142,7 +142,7 @@ class _DetailSetsPageState extends State<DetailSetsPage> {
                               height: double.infinity,
                               padding: EdgeInsets.all(8),
                               decoration: BoxDecoration(
-                                color: Colors.lightBlue, // Ubah warna latar belakang kontainer menjadi light blue
+                                color: Colors.red[200],
                                 border: Border.all(color: Colors.grey),
                                 borderRadius: BorderRadius.circular(8),
                               ),

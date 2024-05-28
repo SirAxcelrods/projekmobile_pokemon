@@ -96,29 +96,29 @@ class _LoginPageState extends State<LoginPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/light-1.png'),
+                              image: AssetImage('assets/images/poke2.png'),
                             ),
                           ),
                         ),
                       ),
                     ),
                     Positioned(
-                      left: 140,
-                      width: 80,
-                      height: 150,
+                      left: 50,
+                      width: 300,
+                      height: 300,
                       child: FadeInUp(
                         duration: Duration(milliseconds: 1200),
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/light-2.png'),
+                              image: AssetImage('assets/images/poke.png'),
                             ),
                           ),
                         ),
                       ),
                     ),
                     Positioned(
-                      right: 40,
+                      right: 60,
                       top: 40,
                       width: 80,
                       height: 150,
@@ -127,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Container(
                           decoration: BoxDecoration(
                             image: DecorationImage(
-                              image: AssetImage('assets/images/clock.png'),
+                              image: AssetImage('assets/images/ball.png'),
                             ),
                           ),
                         ),
@@ -137,12 +137,12 @@ class _LoginPageState extends State<LoginPage> {
                       child: FadeInUp(
                         duration: Duration(milliseconds: 1600),
                         child: Container(
-                          margin: EdgeInsets.only(top: 50),
+                          margin: EdgeInsets.only(top: 200),
                           child: Center(
                             child: Text(
                               "Login",
                               style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.red,
                                   fontSize: 40,
                                   fontWeight: FontWeight.bold),
                             ),
@@ -164,7 +164,7 @@ class _LoginPageState extends State<LoginPage> {
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: Color.fromRGBO(143, 148, 251, 1)),
+                          border: Border.all(color: Color.fromRGBO(200, 12, 12, 1)),
                           boxShadow: [
                             BoxShadow(
                               color: Color.fromRGBO(143, 148, 251, .2),
@@ -180,7 +180,7 @@ class _LoginPageState extends State<LoginPage> {
                               decoration: BoxDecoration(
                                 border: Border(
                                     bottom: BorderSide(
-                                        color: Color.fromRGBO(143, 148, 251, 1))),
+                                        color: Color.fromRGBO(225, 29, 50, 1))),
                               ),
                               child: TextField(
                                 controller: _emailController,
@@ -218,8 +218,8 @@ class _LoginPageState extends State<LoginPage> {
                             borderRadius: BorderRadius.circular(10),
                             gradient: LinearGradient(
                               colors: [
-                                Color.fromRGBO(143, 148, 251, 1),
-                                Color.fromRGBO(143, 148, 251, .6),
+                                Color.fromRGBO(225, 0, 60, 1),
+                                Color.fromRGBO(225, 0, 0, .6),
                               ],
                             ),
                           ),
@@ -247,7 +247,7 @@ class _LoginPageState extends State<LoginPage> {
                         child: Text(
                           "Don't have an account? Register here",
                           style: TextStyle(
-                              color: Color.fromRGBO(143, 148, 251, 1)),
+                              color: Color.fromRGBO(0, 0, 0, 1)),
                         ),
                       ),
                     ),
@@ -256,7 +256,7 @@ class _LoginPageState extends State<LoginPage> {
                       child: Text(
                         "Forgot Password?",
                         style: TextStyle(
-                            color: Color.fromRGBO(143, 148, 251, 1)),
+                            color: Color.fromRGBO(225, 50, 0, 1)),
                       ),
                     ),
                   ],
